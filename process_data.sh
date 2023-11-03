@@ -11,7 +11,7 @@ file_ap=${file_ap}_mean
 file_pa=${file_pa}_mean
 
 # Segment spinal cord
-# TODO: replace with Rohan model
+# TODO: replace with Rohan model and manually edit the segmentation
 sct_deepseg_sc -i ${file_ap}$ext -c t2 -qc qc
 sct_deepseg_sc -i ${file_pa}$ext -c t2 -qc qc
 file_seg_ap=${file_ap}_seg
